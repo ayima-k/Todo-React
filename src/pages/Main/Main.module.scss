@@ -1,0 +1,48 @@
+.root{
+  position: relative;
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 1rem 0;
+  gap: 20px;
+
+  .card{
+    border: 1px solid rgb(100, 100, 100);
+    cursor: pointer;
+    padding: 16px;
+    border-radius: 10px;
+    h1, p{
+      margin: 0;
+    }
+    h1{
+      margin-bottom: 1rem;
+    }
+    &:hover{
+      box-shadow: 0 0 5px rgb(100, 100, 100);
+    }
+  }
+
+  .createBtn{
+    position: fixed;
+    right: 1rem;
+    bottom: 1rem;
+    background-color: royalblue;
+    color: white;
+    width: fit-content;
+    padding: 12px 16px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    margin: 0 auto;
+    font-size: 16px;
+    cursor: pointer;
+    &:hover{
+      background-color: rgb(32, 62, 155);
+    }
+    &:active{
+      background-color: rgb(15, 53, 170);
+    }
+  }
+}
